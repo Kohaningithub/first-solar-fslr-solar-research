@@ -4,9 +4,9 @@
 
 ## 结论先行
 
-FSLR 的核心矛盾不是“太阳能行业景气度是否好”，而是美国本土薄膜组件产能能不能在政策保护期内，把 45X、贸易壁垒和数据中心/公用事业需求转成可持续现金流。公司当前基本面很强：Q1 2026 收入 $1.044bn、毛利率 46.6%、调整后 EBITDA $520mn、净现金约 $2.0bn，backlog 47.9GW/$14.4bn。问题在于股价也已经重估，按公司口径估算 EV/FY2026 EBITDA midpoint 约 11.1x。
+FSLR 的核心矛盾不是“太阳能行业景气度是否好”，而是美国本土薄膜组件产能能不能在政策保护期内，把 45X、贸易壁垒和数据中心/公用事业需求转成可持续现金流。公司当前基本面很强：Q1 2026 收入 $1.044bn、毛利率 46.6%、调整后 EBITDA $520mn、净现金约 $2.0bn，backlog 47.9GW/$14.4bn。问题在于股价已接近基本面定价，按公司口径估算 EV/FY2026 EBITDA midpoint 约 11.1x，base case 并不显示明显低估。
 
-投资方向上，我更偏向“已有仓位继续持有并围绕事件做增减；新资金等待验证或回撤分批”。这不是一个低估值捡烟蒂。它是政策、订单、产能执行共同驱动的质量制造股，适合用情景和催化跟踪，而不是只看 PE 下单。
+投资方向上，我更偏向“已有仓位继续持有并验证 earnings power；新资金等待回撤、backlog ASP 改善、45X 政策确定性提高，或 2027-2029 收入桥更清晰”。这不是一个低估值捡烟蒂。它是政策、订单、产能执行共同驱动的质量制造股，适合用情景和催化跟踪，而不是只看 PE 下单。
 
 ## 最关键的问题
 
@@ -24,9 +24,9 @@ FSLR 的核心矛盾不是“太阳能行业景气度是否好”，而是美国
 
 ## 估值
 
-按当前价格约 $297.89、Q1 diluted shares 107.6mn、净现金约 $2.0bn 粗算，市值约 $32.1bn，EV 约 $30.1bn。对应 TTM EPS 约 $15.48，P/E 约 19.2x；对应 FY2026 adjusted EBITDA midpoint $2.7bn，EV/EBITDA 约 11.1x。
+按当前价格约 $297.74、Q1 diluted shares 107.6mn、净现金约 $2.0bn 粗算，市值约 $32.0bn，EV 约 $30.0bn。对应 TTM EPS 约 $15.48，P/E 约 19.2x；对应 FY2026 adjusted EBITDA midpoint $2.7bn，EV/EBITDA 约 11.1x。
 
-情景上，熊市情景用 $2.3bn EBITDA 和 8x EV/EBITDA，隐含股价约 $190；基本情景用 $2.7bn 和 10x，约 $269；牛市情景用 $3.2bn 和 12x，约 $375。当前价格接近基本情景，因此需要新增证据支持继续上行。
+情景上，熊市情景用 $2.3bn EBITDA 和 8x EV/EBITDA，隐含股价约 $190；基本情景用 $2.7bn 和 10x，约 $269；牛市情景用 $3.2bn 和 12x，约 $375。当前价格已经高于 base case，说明市场已经反映一部分 45X 和 backlog 可见度，继续上涨需要新增订单 ASP、backlog 兑现、毛利率稳定和政策确定性共同支持。
 
 ## 市场反应
 
@@ -38,9 +38,9 @@ FSLR 是政策敏感行业中的政策受益者，但受益者也要承担政策
 
 ## 投资框架
 
-我的框架是：不把它当普通太阳能股，也不把它当无风险政策套利。已有仓位可以继续跟踪；新资金更适合分批，优先在估值回到 9x EV/FY2026 EBITDA 附近、或新增 bookings/政策出现明确正反馈时加。若股价上到牛市情景但没有 backlog ASP、45X 稳定性或 2027-2028 新单支撑，则更适合降低仓位或只做事件交易。
+我的框架是：不把它当普通太阳能股，也不把它当无风险政策套利。FSLR 不是纯粹低估标的，而是高质量但政策敏感的 earnings compounder。已有仓位继续跟踪 earnings power 兑现；新资金更适合等待回撤、backlog ASP 改善、45X 政策确定性提高，或 2027-2029 收入桥更清晰。若股价上到牛市情景但没有 backlog ASP、45X 稳定性或 2027-2029 新单支撑，则更适合降低仓位或只做事件交易。
 
-需要继续跟踪的指标是：新增 bookings GW 和 ASP、backlog delivery year、45X cash realization、FY2026 EBITDA run-rate、Section 232/AD-CVD/TOPCon 进展、OCF-capex、产能利用率和 warranty/quality disclosure。
+需要继续跟踪的指标是：新增 bookings GW 和 ASP、backlog delivery year、cancellations、45X cash realization、FY2026 EBITDA run-rate、Section 232/AD-CVD/TOPCon 进展、OCF-capex、产能利用率和 warranty/quality disclosure。
 
 ## 来源
 

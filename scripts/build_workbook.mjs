@@ -133,7 +133,7 @@ for (const [name, sheet] of Object.entries(sheets)) {
   setTitle(s, "First Solar (FSLR) 中文深度研究", `独立研究项目 | 数据截至 ${data.run_date}`);
   s.getRange("A4:B14").values = [
     ["关键结论", "当前读数"],
-    ["投资方向", "已有仓位继续跟踪；新资金等待回撤或订单/政策验证后分批"],
+    ["投资方向", "当前股价已接近基本面定价；继续持有更依赖 earnings power 兑现；新资金宜等待回撤、backlog ASP 改善、45X 政策确定性提高，或 2027-2029 收入桥更清晰"],
     ["当前股价", data.key_metrics.current_price_usd],
     ["公司口径 EV", ""],
     ["EV/FY2026 EBITDA", ""],
@@ -239,7 +239,7 @@ for (const [name, sheet] of Object.entries(sheets)) {
 // Peers
 {
   const s = sheets["Peers"];
-  setTitle(s, "Peers", "同行估值快照；FSLR 同时给出公司口径 cross-check。");
+  setTitle(s, "Peers", "Solar ecosystem directional comparison only; FSLR uses company-basis EV and deserves separate treatment because of CdTe, U.S. manufacturing, backlog and 45X sensitivity.");
   writeTable(s, 3, 0, data.valuation_peers, "PeersTable");
   numberFormat(s, "D5:Q20", "0.00");
 }
