@@ -1,0 +1,7 @@
+﻿event_date,event,type,timing,before_date,after_date,fslr_close_before,fslr_close_after,fslr_return_pct,tan_return_pct,alpha_vs_tan_pct,source_id,note
+2025-04-21,Commerce 对东南亚太阳能电池/组件 AD/CVD 作出最终裁定,trade policy,intraday_or_before_close,2025-04-17,2025-04-21,127.98,122.45,-4.32,-1.95,-2.37,S8;S11,Close-to-close event window; not a causal proof.
+2026-02-19,$1.5bn senior unsecured revolver 披露,liquidity,after_close,2026-02-19,2026-02-20,233.3,241.88,3.68,2.14,1.54,S13;S11,Close-to-close event window; not a causal proof.
+2026-02-24,FY2025/Q4 earnings + 2026 guidance,earnings,after_close,2026-02-24,2026-02-25,243.21,210.12,-13.61,-2.02,-11.59,S5;S11,Close-to-close event window; not a causal proof.
+2026-03-26,USITC 启动 TOPCon Section 337 调查,trade/IP,intraday_or_before_close,2026-03-25,2026-03-26,193.51,185.83,-3.97,-3.09,-0.88,S10;S11,Close-to-close event window; not a causal proof.
+2026-04-30,Q1 2026 earnings，维持全年指引,earnings,after_close,2026-04-30,2026-05-01,201.89,211.71,4.86,1.47,3.39,S1;S11,Close-to-close event window; not a causal proof.
+2026-05-27,USITC 对中台晶硅电池/组件 sunset review 表态,trade policy,intraday_or_before_close,2026-05-26,2026-05-27,269.95,273.67,1.38,2.25,-0.87,S14;S11,Close-to-close event window; not a causal proof.

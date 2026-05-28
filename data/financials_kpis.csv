@@ -1,0 +1,18 @@
+﻿category,metric,unit,2023A,2024A,2025A,Q1_2025A,Q1_2026A,FY2026_guidance_mid,source_id,note
+Income statement,Net sales,USD mn,3318.602,4206.289,5219.376,844.568,1044.24,5050.0,S1;S3;S4;S5,2026 guidance midpoint of $4.9-$5.2bn.
+Income statement,Gross profit,USD mn,1300.679,1857.864,2120.339,344.403,486.131,2500.0,S1;S3;S4;S5,2026 guidance midpoint of $2.4-$2.6bn.
+Income statement,Gross margin,%,39.19,44.17,40.63,40.78,46.55,49.5,S1;S4,Calculated from net sales and gross profit.
+Income statement,Operating income,USD mn,857.266,1394.42,1596.864,221.244,345.303,,S1;S4,
+Income statement,Net income,USD mn,830.777,1292.044,1528.229,209.535,346.619,,S1;S4,
+Income statement,Diluted EPS,USD/share,7.74,12.02,14.21,1.95,3.22,,S1;S4,
+Cash flow,Operating cash flow,USD mn,602.26,1217.999,2057.105,-607.982,-214.866,,S2;S4,Q1 seasonality and working-capital timing matter.
+Cash flow,Capex / PP&E purchases,USD mn,1386.775,1526.076,869.875,205.966,118.529,900.0,S2;S3;S4,2026 guidance midpoint of $0.8-$1.0bn.
+Non-GAAP,Adjusted EBITDA,USD mn,,,,379.18,519.807,2700.0,S1;S3,2026 guidance midpoint of $2.6-$2.8bn.
+Business KPI,Module production,GWdc,,,17.5,,4.3,,S2;S4,"Production, not shipment."
+Business KPI,Module sold,GWdc,,,16.7,,3.8,17.6,S1;S2;S3;S4,2026 guidance midpoint of 17.0-18.2GW sold.
+Business KPI,Contracted backlog,GWdc,,,48.8,,47.9,,S1;S3;S5,"Backlog is contracted future volume, not current revenue."
+Business KPI,Backlog value,USD bn,,,14.6,,14.4,,S1;S3;S5,Backlog dollar value includes future contracted net sales.
+Business KPI,Bookings YTD,GWdc,,,,,3.7,,S1;S3,3.7GW net bookings since prior earnings call.
+Balance sheet,Cash and marketable securities,USD mn,2269.609,1267.781,1993.961,1261.902,2426.579,,S2;S4,"Includes cash, cash equivalents, marketable securities and restricted cash/securities."
+Balance sheet,Debt,USD mn,562.063,540.284,540.001,540.124,425.753,,S2;S4,Current debt + long-term debt.
+Balance sheet,Net cash,USD mn,1707.546,727.497,1453.96,721.778,2000.826,,S1;S2;S4,Cash and marketable securities less debt.
