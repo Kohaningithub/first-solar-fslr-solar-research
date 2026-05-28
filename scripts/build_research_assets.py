@@ -521,31 +521,37 @@ FSLR 是政策敏感行业中的政策受益者，但受益者也要承担政策
 """
     (ROOT / "investment_memo.md").write_text(memo, encoding="utf-8")
 
-    post = f"""FSLR（First Solar）现在最重要的问题，不是“太阳能是不是好行业”，而是：美国本土薄膜组件这个稀缺资产，还能不能把政策、订单和产能执行转成 2027 之后的现金流。
+    post = f"""FSLR（First Solar）我现在的看法是：中期看好公司核心价值，但不看好当前位置无脑追高。
 
-结论先说：我不想在当前位置无脑追高。已有仓位可以继续跟，尤其围绕政策和订单催化做动态管理；新资金更适合等回撤或等验证后分批。FSLR 是好公司，但现在不是便宜故事。
+它不是普通“太阳能板块反弹”逻辑。FSLR 的核心价值在于美国本土、非晶硅路线、规模化薄膜组件产能。简单说，它卖的不是一个光伏组件 beta，而是美国公用事业级太阳能供应链里少见的“确定性产能 + 政策信用 + 已签订单”。
 
-几个数字先放出来：
+为什么看好？
 
-Q1 2026 收入 $1.044bn，同比约 +24%；毛利率 46.6%；调整后 EBITDA $520mn；EPS $3.22。全年指引维持在收入 $4.9-$5.2bn、调整后 EBITDA $2.6-$2.8bn。
+第一，需求端不是住宅太阳能那套高利率压力逻辑，而是 utility-scale、电网建设、数据中心用电和大型企业购电。美国未来几年电力需求往上走，太阳能仍然是最容易快速部署的新增电源之一。
 
-更关键的是订单。Q1 末 contracted backlog 47.9GW，价值 $14.4bn，约等于 $0.30/W。这个 backlog 给了可见度，也解释了为什么 FSLR 和普通太阳能 beta 不一样。但它不是当前收入，也不是保证利润。下一步要看新增 bookings 的价格和交付年份。
+第二，供给端稀缺。FSLR 的 CdTe 薄膜路线不依赖传统晶硅/多晶硅链条，产能主要在美国和友好地区。这个差异在正常周期里只是技术差异，在贸易保护和供应链安全周期里会变成估值差异。
 
-估值上，用当前股价约 ${key_metrics['current_price_usd']:.2f}、Q1 diluted shares 107.6mn、净现金约 $2.0bn 粗算，EV 约 ${key_metrics['ev_usd_bn_company_basis']:.1f}bn。对 FY2026 adjusted EBITDA midpoint $2.7bn，是大约 {key_metrics['ev_ebitda_fy2026_mid']:.1f}x。这个倍数不夸张，但也不是“没人看懂”的便宜。
+第三，公司已经有很高可见度。Q1 2026 末 contracted backlog 47.9GW、价值 $14.4bn，隐含约 $0.30/W。这个 backlog 不是当前收入，但它说明未来几年收入桥不是空中楼阁。
 
-FSLR 的核心 upside 来自三个地方：
+第四，资产负债表干净。Q1 末净现金约 $2.0bn。制造业扩产最怕高杠杆和现金流断裂，FSLR 目前这点比多数太阳能链公司舒服。
 
-1. 45X 制造税收抵免稳定，公司 2026 指引里嵌了约 $2.145bn benefit。
-2. AD/CVD、Section 232、TOPCon/USITC 这类贸易/IP 事件，让进口晶硅竞争对手成本上升。
-3. 数据中心和 utility-scale 需求继续强，新增订单价格不塌。
+为什么我又不想在当前位置追高？
 
-核心风险也正好在这三点：
+因为好公司不等于好买点。用当前股价约 ${key_metrics['current_price_usd']:.2f}、Q1 diluted shares 107.6mn、净现金约 $2.0bn 粗算，公司口径 EV 约 ${key_metrics['ev_usd_bn_company_basis']:.1f}bn。对 FY2026 adjusted EBITDA midpoint $2.7bn，是大约 {key_metrics['ev_ebitda_fy2026_mid']:.1f}x EV/EBITDA。这个倍数不离谱，但已经不是“市场没看懂”的价格。
 
-45X 是政策变量，不是普通经营利润；贸易保护如果推高项目成本，也可能伤需求；backlog 很大，但市场真正要看 2027-2029 的桥怎么搭。
+更重要的是，FSLR 的利润里有很强的政策变量。公司 2026 指引里嵌了约 $2.145bn 的 45X benefit。45X 是真实收益，但市场会问：这个收益能持续多久？规则会不会收紧？能不能顺利现金化？所以它不能简单按普通经营利润给满倍数。
 
-我的跟踪框架很简单：看新增 bookings GW 和 ASP、backlog delivery years、45X cash realization、OCF-capex、Section 232/AD-CVD/TOPCon 进展。如果 EV/FY2026 EBITDA 回到 9x 附近且订单价格稳，分批更舒服；如果股价先到牛市情景但没有新增证据，只适合事件交易。
+还有一点，backlog 很大，但股价看的是增量。下一步最关键不是重复说 47.9GW backlog，而是看新增 bookings 的 ASP、交付年份、客户质量和取消风险。如果新订单价格开始走弱，backlog 的“护城河”就会被市场重新定价。
 
-一句话：FSLR 是美国太阳能制造政策链里最干净、最稀缺的权益资产之一，但当前位置已经要求投资人继续验证，而不是只相信叙事。
+所以我的结论是：中期趋势偏正面，但短期趋势更像事件驱动和估值消化。若 45X 规则稳定、Section 232/AD-CVD/TOPCon 继续抬高进口竞争成本，同时新增订单 ASP 稳住，FSLR 有机会从基本情景往牛市情景走。反过来，如果政策折现变大、项目成本伤害需求，或者 2027-2028 新单接不上，股价更容易横盘甚至回撤。
+
+我在 workbook 里做 peers 表，不是为了说 FSLR 和每家公司完全可比，而是为了看它在太阳能链条里的估值位置。表里放了 ENPH/SEDG 这类逆变器和储能，CSIQ/JKS 这类全球组件，ARRY/SHLS/NXT 这类 tracker 和 EBOS，还有 RUN 这种住宅太阳能服务。结论很直观：FSLR 明显比商品化组件厂贵，但它有美国制造、净现金、backlog 和政策收益，所以应该有溢价；问题是这个溢价现在已经不小，后面必须靠订单和政策继续兑现。
+
+policy risk 表则是这份研究最重要的跟踪页之一。FSLR 的政策不是单边利好，而是“护城河 + 风险折现”一起存在。45X 决定利润质量；OBBBA、FEOC/PFE 影响客户项目能否拿 credit；AD/CVD 和 Section 232 影响进口竞争和价格 umbrella；TOPCon/USITC 影响晶硅竞争格局。这些变量任何一个变化，都可能比季度收入多一点少一点更影响估值。
+
+我的操作框架很简单：已有仓位可以继续跟，围绕政策和订单催化动态管理；新资金更适合等回撤或等验证后分批。如果 EV/FY2026 EBITDA 回到 9x 附近，同时新增订单价格稳，我会觉得性价比更好。如果股价先涨到牛市情景，但没有 backlog ASP、45X 稳定性和 2027-2028 新单支撑，那就更像事件交易，不是舒服的长期加仓点。
+
+一句话：我看好 FSLR 的核心价值和中期产业位置，但不看好在没有新增验证的情况下追高。接下来真正要盯的不是太阳能新闻热度，而是新增 bookings、backlog ASP、45X cash realization、OCF-capex 和贸易政策落地。
 """
     (ROOT / "publish_long_post_zh.md").write_text(post, encoding="utf-8")
 

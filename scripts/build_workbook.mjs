@@ -341,5 +341,16 @@ for (const sheetName of ["Summary", "Valuation", "Market Reaction", "Checks"]) {
 }
 
 const output = await SpreadsheetFile.exportXlsx(wb);
-await output.save(path.join(outDir, "first_solar_fslr_research_workbook.xlsx"));
-console.log(path.join(outDir, "first_solar_fslr_research_workbook.xlsx"));
+const outputPath = path.join(outDir, "first_solar_fslr_research_workbook.xlsx");
+try {
+  await output.save(outputPath);
+  console.log(outputPath);
+} catch (err) {
+  if (err && err.code === "EBUSY") {
+    const fallbackPath = path.join(outDir, "first_solar_fslr_research_workbook_updated.xlsx");
+    await output.save(fallbackPath);
+    console.log(fallbackPath);
+  } else {
+    throw err;
+  }
+}
