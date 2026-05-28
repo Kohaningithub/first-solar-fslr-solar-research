@@ -348,8 +348,19 @@ try {
 } catch (err) {
   if (err && err.code === "EBUSY") {
     const fallbackPath = path.join(outDir, "first_solar_fslr_research_workbook_updated.xlsx");
-    await output.save(fallbackPath);
-    console.log(fallbackPath);
+    try {
+      await output.save(fallbackPath);
+      console.log(fallbackPath);
+    } catch (fallbackErr) {
+      if (fallbackErr && fallbackErr.code === "EBUSY") {
+        const stamp = new Date().toISOString().replace(/[-:T.Z]/g, "").slice(0, 14);
+        const timestampPath = path.join(outDir, `first_solar_fslr_research_workbook_${stamp}.xlsx`);
+        await output.save(timestampPath);
+        console.log(timestampPath);
+      } else {
+        throw fallbackErr;
+      }
+    }
   } else {
     throw err;
   }
