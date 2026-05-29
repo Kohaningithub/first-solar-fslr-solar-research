@@ -19,6 +19,7 @@ for (const name of [
   "Market Reaction",
   "Catalysts Policy Risks",
   "Research Path",
+  "Action Framework",
   "Sources",
   "Checks",
 ]) {
@@ -131,9 +132,11 @@ for (const [name, sheet] of Object.entries(sheets)) {
 {
   const s = sheets["Summary"];
   setTitle(s, "First Solar (FSLR) 中文深度研究", `独立研究项目 | 数据截至 ${data.run_date}`);
-  s.getRange("A4:B14").values = [
+  s.getRange("A4:B16").values = [
     ["关键结论", "当前读数"],
-    ["投资方向", "当前股价已接近基本面定价；继续持有更依赖 earnings power 兑现；新资金宜等待回撤、backlog ASP 改善、45X 政策确定性提高，或 2027-2029 收入桥更清晰"],
+    ["投资方向", "当前价格附近偏买/主动建仓；不是深度低估，但 $290-$310 区间风险收益足够做初始仓位"],
+    ["建仓/加仓", "$290-$310 建 40%-60% 目标仓位；$260-$280 且 thesis intact 加；$310-$330 只为经营确认加"],
+    ["减仓/认错", "$360-$380 无经营上修则减仓；<$250-$255 且 thesis break，或经营触发器失效，则减至小仓/退出"],
     ["当前股价", data.key_metrics.current_price_usd],
     ["公司口径 EV", ""],
     ["EV/FY2026 EBITDA", ""],
@@ -144,16 +147,16 @@ for (const [name, sheet] of Object.entries(sheets)) {
     ["下一步验证", "新增 bookings ASP、45X cash realization、OCF-capex、Section 232/TOPCon"],
     ["资料路径", "见 Sources sheet 和 data/sources.csv"],
   ];
-  s.getRange("B7").formulas = [["=Valuation!B9"]];
-  s.getRange("B8").formulas = [["=Valuation!B15"]];
-  s.getRange("B9").formulas = [["=Valuation!B13"]];
-  s.getRange("B11").formulas = [["=Valuation!B18"]];
+  s.getRange("B9").formulas = [["=Valuation!B9"]];
+  s.getRange("B10").formulas = [["=Valuation!B15"]];
+  s.getRange("B11").formulas = [["=Valuation!B13"]];
+  s.getRange("B13").formulas = [["=Valuation!B18"]];
   s.getRange("A4:B4").format = { fill: theme.green, font: { bold: true, color: "#FFFFFF" } };
-  s.getRange("B6").format.numberFormat = "$0.00";
-  s.getRange("B7").format.numberFormat = "$0.0bn";
-  s.getRange("B8").format.numberFormat = "0.0x";
-  s.getRange("B9").format.numberFormat = "0.0x";
-  s.getRange("B11").format.numberFormat = "$0.00/W";
+  s.getRange("B8").format.numberFormat = "$0.00";
+  s.getRange("B9").format.numberFormat = "$0.0bn";
+  s.getRange("B10").format.numberFormat = "0.0x";
+  s.getRange("B11").format.numberFormat = "0.0x";
+  s.getRange("B13").format.numberFormat = "$0.00/W";
   s.getRange("D4:F8").values = [
     ["Year", "Net Sales", "Gross Profit"],
     ["2023A", 3318.602, 1300.679],
@@ -273,6 +276,17 @@ for (const [name, sheet] of Object.entries(sheets)) {
   writeTable(s, 3, 0, data.research_path, "ResearchPathTable");
 }
 
+// Action Framework
+{
+  const s = sheets["Action Framework"];
+  setTitle(s, "Action Framework", "明确偏买、加仓、减仓和认错条件；价格带必须和经营触发器一起看。");
+  writeTable(s, 3, 0, data.investment_action_framework ?? [], "ActionFrameworkTable");
+  const widths = [120, 120, 190, 430, 360, 130];
+  widths.forEach((width, col) => {
+    s.getRange(rangeFor(0, col, 80, 1)).format.columnWidthPx = width;
+  });
+}
+
 // Sources
 {
   const s = sheets["Sources"];
@@ -330,7 +344,7 @@ const errors = await wb.inspect({
 });
 console.log(errors.ndjson);
 
-for (const sheetName of ["Summary", "Valuation", "Market Reaction", "Checks"]) {
+for (const sheetName of ["Summary", "Valuation", "Market Reaction", "Action Framework", "Checks"]) {
   const preview = await wb.render({
     sheetName,
     autoCrop: "all",

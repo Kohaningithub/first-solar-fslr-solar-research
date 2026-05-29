@@ -1,0 +1,7 @@
+﻿action,price_zone,position_action,operating_triggers,risk_control,source_id
+主动建仓,$290-$310,建立 40%-60% 目标仓位,无 45X、backlog、OCF 或 FY2026 guide 的 thesis break,不是一把梭；后续用经营触发器决定补仓或减仓,S1;S3;S11;S12
+回撤加仓,$260-$280,补到 70%-90% 目标仓位,backlog ASP 稳定、无重大取消/延迟，45X 现金化路径未恶化,若回撤来自政策或订单实质恶化，不加仓,S1;S3;S6;S7
+确认加仓,$310-$330,最多补到满仓,新增 bookings ASP 接近/高于 $0.30/W；45X cash realization 清晰；OCF-capex 转正；2027-2029 收入桥更清楚，至少满足两项,只为经营确认加仓，不为单日政策新闻追价,S1;S3;S6;S7;S8;S9
+持有观察,$330-$360,持有，不主动扩仓,FY2026 EBITDA run-rate、毛利率和 backlog conversion 与模型一致,若估值先涨而经营未上修，准备减仓,S1;S3;S12
+减仓,$360-$380,降低 20%-40% 仓位,股价接近 bull case，但没有 EBITDA、backlog ASP 或 45X 确定性上修；或 EV/FY2026 EBITDA 高于约 13x,保留核心仓位等待下一轮数据，不把 bull case 当 base case,S1;S3;S12
+认错/止损,<$250-$255 或经营触发器失效,减至小仓或退出并重做模型,FY2026 EBITDA run-rate/guide 低于约 $2.5bn；新增 bookings ASP < $0.27/W；重大取消/延迟；45X 现金化受阻；OCF-capex 连续两个季度不恢复；2027-2029 收入桥断档,价格跌破区间必须结合 thesis break；经营触发器失效时不等价格确认,S1;S3;S6;S7;S11;S12

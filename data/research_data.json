@@ -638,10 +638,10 @@
   "research_path": [
     {
       "key_question": "Is FSLR fairly valued, overvalued, or still underappreciated given 2026 EBITDA power and policy-adjusted risk?",
-      "why_it_matters": "当前股价已接近基本面定价，继续上行要靠 earnings power 兑现、政策折现下降或估值倍数扩张。",
+      "why_it_matters": "当前估值已不便宜，但公司质量、45X、backlog 和净现金使 $290-$310 区间的风险收益仍偏正。",
       "data_to_track": "FY2026 EBITDA run-rate, EV/FY2026 EBITDA, TTM P/E, net cash, policy-adjusted multiple.",
-      "threshold_or_signpost": "EV/FY2026 EBITDA <9x 且 backlog ASP 稳定更适合分批；>11-12x 需要明确政策/订单催化。",
-      "current_read": "At ~11.0x FY2026 EBITDA and ~19.0x TTM P/E, FSLR is no longer a deep-value solar trade; further upside needs gross margin strength, backlog conversion and policy clarity.",
+      "threshold_or_signpost": "$290-$310 主动建仓；$260-$280 且 thesis intact 加仓；$360-$380 无经营上修则减仓；跌破 $250-$255 且出现 thesis break 则认错。",
+      "current_read": "At ~11.0x FY2026 EBITDA and ~19.0x TTM P/E, FSLR is not deep value, but current-price risk/reward supports active building with explicit stop/reassessment triggers.",
       "source_id": "S1;S3;S11;S12"
     },
     {
@@ -817,6 +817,56 @@
       "source_type": "official trade policy",
       "used_for": "tariff continuation catalyst",
       "quality": "primary"
+    }
+  ],
+  "investment_action_framework": [
+    {
+      "action": "主动建仓",
+      "price_zone": "$290-$310",
+      "position_action": "建立 40%-60% 目标仓位",
+      "operating_triggers": "无 45X、backlog、OCF 或 FY2026 guide 的 thesis break",
+      "risk_control": "不是一把梭；后续用经营触发器决定补仓或减仓",
+      "source_id": "S1;S3;S11;S12"
+    },
+    {
+      "action": "回撤加仓",
+      "price_zone": "$260-$280",
+      "position_action": "补到 70%-90% 目标仓位",
+      "operating_triggers": "backlog ASP 稳定、无重大取消/延迟，45X 现金化路径未恶化",
+      "risk_control": "若回撤来自政策或订单实质恶化，不加仓",
+      "source_id": "S1;S3;S6;S7"
+    },
+    {
+      "action": "确认加仓",
+      "price_zone": "$310-$330",
+      "position_action": "最多补到满仓",
+      "operating_triggers": "新增 bookings ASP 接近/高于 $0.30/W；45X cash realization 清晰；OCF-capex 转正；2027-2029 收入桥更清楚，至少满足两项",
+      "risk_control": "只为经营确认加仓，不为单日政策新闻追价",
+      "source_id": "S1;S3;S6;S7;S8;S9"
+    },
+    {
+      "action": "持有观察",
+      "price_zone": "$330-$360",
+      "position_action": "持有，不主动扩仓",
+      "operating_triggers": "FY2026 EBITDA run-rate、毛利率和 backlog conversion 与模型一致",
+      "risk_control": "若估值先涨而经营未上修，准备减仓",
+      "source_id": "S1;S3;S12"
+    },
+    {
+      "action": "减仓",
+      "price_zone": "$360-$380",
+      "position_action": "降低 20%-40% 仓位",
+      "operating_triggers": "股价接近 bull case，但没有 EBITDA、backlog ASP 或 45X 确定性上修；或 EV/FY2026 EBITDA 高于约 13x",
+      "risk_control": "保留核心仓位等待下一轮数据，不把 bull case 当 base case",
+      "source_id": "S1;S3;S12"
+    },
+    {
+      "action": "认错/止损",
+      "price_zone": "<$250-$255 或经营触发器失效",
+      "position_action": "减至小仓或退出并重做模型",
+      "operating_triggers": "FY2026 EBITDA run-rate/guide 低于约 $2.5bn；新增 bookings ASP < $0.27/W；重大取消/延迟；45X 现金化受阻；OCF-capex 连续两个季度不恢复；2027-2029 收入桥断档",
+      "risk_control": "价格跌破区间必须结合 thesis break；经营触发器失效时不等价格确认",
+      "source_id": "S1;S3;S6;S7;S11;S12"
     }
   ]
 }
